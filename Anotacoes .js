@@ -17,3 +17,8 @@ Iniciar a aplicação -- npm run dev
 
 -- o Hook mais usado é o useState, serve para gerenciar o estado de algum dado
 -- Para guardar dado é preciso definir o nome da variavel e para alterar, utiliza setNome
+
+//Propriedade keys
+-- o react precisa de uma chave unica em cada item iterado
+-- Isso serve para ajuda-lo na renderização do componente
+
