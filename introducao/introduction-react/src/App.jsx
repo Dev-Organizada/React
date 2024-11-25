@@ -10,6 +10,7 @@ import ImageAda from './assets/ada.jpg'
 // styles
 import './App.css'
 import ListRender from './components/ListRender'
+import ConditionalRender from './components/ConditionalRender'
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <>
         <MenegeData/>
         <ListRender/>
+        <ConditionalRender/>
       </>
   )
 }
