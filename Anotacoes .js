@@ -22,3 +22,6 @@ Iniciar a aplicação -- npm run dev
 -- o react precisa de uma chave unica em cada item iterado
 -- Isso serve para ajuda-lo na renderização do componente
 
+//Previous state
+-- É um recurso q permite pegar o dado em seu valor original dentro do set
+-- É muito utilizado para modificar listas
