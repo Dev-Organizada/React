@@ -9,6 +9,7 @@ import ImageAda from './assets/ada.jpg'
 
 // styles
 import './App.css'
+import ListRender from './components/ListRender'
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
       <>
         <MenegeData/>
+        <ListRender/>
       </>
   )
 }
