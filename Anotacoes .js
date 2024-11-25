@@ -14,3 +14,6 @@ Iniciar a aplicação -- npm run dev
 -- Todos os Hooks começam com use, por exemplo: useState
 -- Pode-se criar um Hooks, isso é chamado de custom Hook
 -- Precisam ser importados
+
+-- o Hook mais usado é o useState, serve para gerenciar o estado de algum dado
+-- Para guardar dado é preciso definir o nome da variavel e para alterar, utiliza setNome
