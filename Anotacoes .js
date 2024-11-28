@@ -25,3 +25,17 @@ Iniciar a aplicação -- npm run dev
 //Previous state
 -- É um recurso q permite pegar o dado em seu valor original dentro do set
 -- É muito utilizado para modificar listas
+
+//Estrutura do IF e Else 
+{variavel === condição ? (se for verdadeiro) : (se for falso)}
+
+ex:
+{name === "Joao" ? ( //if
+        <div>
+          <p>O Nome é Joao</p>
+        </div>
+      ) : ( //else
+        <div>
+          <p>Não nao encontrado!</p>
+        </div>
+      )}

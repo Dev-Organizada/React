@@ -11,7 +11,7 @@ const ListRender = () => {
     ])
 
     const deleteRandom = () => {
-        const randomNumber = Math.floor(Math.random() * 4) //gera um numero aleatorio de acordo com o tamanho da lista de users
+        const randomNumber = Math.floor(Math.random() * list.length) //gera um numero aleatorio de acordo com o tamanho da lista de users
 
         setUsers((prevUsers) => {
             return prevUsers.filter((user) => randomNumber !== user.id)
@@ -35,6 +35,7 @@ const ListRender = () => {
         </ul>
 
         <button onClick={deleteRandom}>Delete random user</button>
+        
 
     </div>
   )
