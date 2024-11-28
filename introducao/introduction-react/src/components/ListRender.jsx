@@ -20,6 +20,7 @@ const ListRender = () => {
 
   return (
     <div>
+        <p>------- Redenrização em lista -------</p>
         <ul>
             {list.map((item, i) => (
                 //Forma de usar key com mal pratica
@@ -36,7 +37,7 @@ const ListRender = () => {
 
         <button onClick={deleteRandom}>Delete random user</button>
         
-
+        <p>------- fim -------</p>
     </div>
   )
 }
