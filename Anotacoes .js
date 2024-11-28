@@ -39,3 +39,8 @@ ex:
           <p>Não nao encontrado!</p>
         </div>
       )}
+	  
+//Props
+-- Permite passar valores de um componente pai para um componente filho	  
+-- Muito util no carregamento via banco de dados
+-- Elas vem em um obj no argumento da função do componente
