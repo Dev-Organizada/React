@@ -1,40 +1,21 @@
-// components
-import FirstComponent from './components/FirstComponent'
-import Event from './components/Event'
-import Challenge from './components/Challenge'
-import MenegeData from './components/ManegeData'
-
-// image
-import ImageAda from './assets/ada.jpg'
-
-// styles
-import './App.css'
-import ListRender from './components/ListRender'
-import ConditionalRender from './components/ConditionalRender'
-import ShowUserName from './components/ShowUserName'
 import CarDetails from './components/CarDetails'
 
-
-
 function App() {
+  const cars = [
+    {id: 1, brand:"Ferrari", color: "Amarela", newCar: true, km: 0},
+    {id: 2, brand:"KIA", color: "Branco", newCar: false, km: 12456},
+    {id: 3, brand:"Renalt", color: "Azul", newCar: false, km: 7845}
+  ]
   return (
       <>
-        <MenegeData/>
-        <ListRender/>
-        <ConditionalRender/>
-
-        <p>------- Props Simples -------</p>
-        {/* Props */}
-        <ShowUserName name="Matheus" />
-        <p>------- Fim -------</p>
-
-        <p>------- Props com Destructuring -------</p>
-        {/* Destructuring*/}
-        <CarDetails brand="VW" km={1000} color="Red" newCar={false}/>
-
-        {/* Reaprovaitamento de código */}
-        <CarDetails brand="Ford" km={0} color="White" newCar={true}/>
-        <CarDetails brand="Fiat" km={4500} color="Pink" newCar={false}/>
+        <p>------- Loop em array de objeto -------</p>
+        {cars.map((car) => (
+          <CarDetails 
+            brand={car.brand} 
+            color={car.color} 
+            km={car.km} 
+            newCar={car.newCar}/>
+        ))}
         <p>------- Fim -------</p>
       </>
   )
