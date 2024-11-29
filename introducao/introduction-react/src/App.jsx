@@ -1,4 +1,5 @@
 import CarDetails from './components/CarDetails'
+import Container from './components/Container'
 
 function App() {
   const cars = [
@@ -16,6 +17,12 @@ function App() {
             km={car.km} 
             newCar={car.newCar}/>
         ))}
+        <p>------- Fim -------</p>
+
+        <p>------- Prop Children -------</p>
+        <Container>
+          <p>Este é o conteudo</p>
+        </Container>
         <p>------- Fim -------</p>
       </>
   )

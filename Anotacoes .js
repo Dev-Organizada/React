@@ -44,3 +44,8 @@ ex:
 -- Permite passar valores de um componente pai para um componente filho	  
 -- Muito util no carregamento via banco de dados
 -- Elas vem em um obj no argumento da função do componente
+
+//Children
+-- É um recurso utilizado para quando um componenteprecisa trr jsx dentro dele, porem este jsx vem do componentepai
+-- Então ele age como um contener
+-- É considerado uma prop do componente
