@@ -46,6 +46,10 @@ ex:
 -- Elas vem em um obj no argumento da função do componente
 
 //Children
--- É um recurso utilizado para quando um componenteprecisa trr jsx dentro dele, porem este jsx vem do componentepai
+-- É um recurso utilizado para quando um componente precisa ter jsx dentro dele, porem este jsx vem do componentepai
 -- Então ele age como um contener
 -- É considerado uma prop do componente
+
+//Elevação de State = State Lift
+-- É quando um valor é elevado do componente pai para o componente filho
+-- Um componente usa o state e o outro altera
