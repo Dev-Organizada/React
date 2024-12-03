@@ -1,11 +1,9 @@
 const UserDetails = ({id, nome, idade, profissao}) => {
   return (
     <div>
-        <ul>
-            <li>{nome}</li>
-            <li>{idade} anos</li>
-            <li>{profissao}</li>
-        </ul>
+        <h2>{nome}</h2>
+        <p>Idade: {idade}</p>
+        <p>Profissão: {profissao}</p>
         {idade >= 18 ? (
             <p>Usuario pode tirar carteira de habilitação</p>
         ) : (

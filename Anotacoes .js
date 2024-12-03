@@ -53,3 +53,8 @@ ex:
 //Elevação de State = State Lift
 -- É quando um valor é elevado do componente pai para o componente filho
 -- Um componente usa o state e o outro altera
+
+//CSS de componente
+-- É utilizado para um componente especifico
+-- Geralmente é criado um arquivo com o mesmo nome do componente e importado nele
+-- Não é um metodo scoped, ou seja, o CSS vaza para outros componentes se houver uma regra em colisão
