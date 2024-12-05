@@ -1,5 +1,6 @@
 import { useState } from "react"
 import MyComponents from "./components/MyComponents"
+import Title from "./components/Title"
 
 function App() {
   const num = 9
@@ -36,6 +37,8 @@ function App() {
         Titulo da classe Dinamica
       </h2>
 
+      {/* CSS Modules*/}
+      <Title/>
     </>
   )
 }
