@@ -1,0 +1,10 @@
+.title {
+    background: black;
+    color: pink;
+    padding: 10px;
+    border: 5px solid pink;
+}
+
+.list {
+    border: 2px solid pink;
+}
