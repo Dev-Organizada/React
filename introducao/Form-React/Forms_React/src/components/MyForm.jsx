@@ -6,6 +6,7 @@ const MyForm = ({user}) => {
     const [name, setName] = useState(user ? user.name : "") // Recebendo o valor da prop
     const [email, setEmail] = useState(user ? user.email : "")  
     const [bio, setBio] = useState("") 
+    const [role, setRole] = useState("")
 
     {/* Resgatar o valor digitado no input */}
     const handleName = (e) => {
@@ -16,13 +17,14 @@ const MyForm = ({user}) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Eviando o formulario")
-        console.log(name, email, bio)
+        console.log(name, email, bio, role)
 
         //Limpar formulario
         setName("")
         setEmail("")
         setBio("")
     }
+
 
   return (
     <div>
@@ -62,8 +64,19 @@ const MyForm = ({user}) => {
                 ></textarea>
             </label>
 
+            {/* Select */}
+            <label>
+                <span>Função do Sistema</span>
+                <select name="role" onChange={(e) => setRole(e.target.value)}>
+                    <option value='user'>Usuario</option>
+                    <option value='editor'>Editor</option>
+                    <option value='admin'>Administrador</option>
+                </select>
+            </label>
+
             <input type='submit' value='Enviar' />
         </form>
+
     </div>
   )
 }
