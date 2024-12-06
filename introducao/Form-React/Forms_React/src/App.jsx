@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <h2>Forms</h2>
-      <MyForm/>
+      <MyForm user={{name:"Fernanda", email:"fernanda@teste.com"}}/>
     </>
   )
 }
