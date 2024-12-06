@@ -4,7 +4,8 @@ import './MyForm.css'
 const MyForm = ({user}) => {
     {/* Gerenciamento de dados */}
     const [name, setName] = useState(user ? user.name : "") // Recebendo o valor da prop
-    const [email, setEmail] = useState(user ? user.email : "")   
+    const [email, setEmail] = useState(user ? user.email : "")  
+    const [bio, setBio] = useState("") 
 
     {/* Resgatar o valor digitado no input */}
     const handleName = (e) => {
@@ -15,7 +16,12 @@ const MyForm = ({user}) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Eviando o formulario")
-        console.log(name, email)
+        console.log(name, email, bio)
+
+        //Limpar formulario
+        setName("")
+        setEmail("")
+        setBio("")
     }
 
   return (
@@ -43,6 +49,17 @@ const MyForm = ({user}) => {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                 />
+            </label>
+
+            {/* Textarea */}
+            <label>
+                <span>Bio</span>
+                <textarea 
+                    name='bio' 
+                    placeholder='Descrição do usuario'
+                    onChange={(e) => setBio(e.target.value)}
+                    value={bio}
+                ></textarea>
             </label>
 
             <input type='submit' value='Enviar' />
