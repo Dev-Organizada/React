@@ -1,10 +1,11 @@
 import './App.css'
+import StarScreen from './components/StarScreen'
 
 function App() {
 
   return (
     <>
-      <h2>Secret Word</h2>
+      <StarScreen/>
     </>
   )
 }
