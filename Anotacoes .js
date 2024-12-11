@@ -58,3 +58,8 @@ ex:
 -- É utilizado para um componente especifico
 -- Geralmente é criado um arquivo com o mesmo nome do componente e importado nele
 -- Não é um metodo scoped, ou seja, o CSS vaza para outros componentes se houver uma regra em colisão
+
+////Projeto Palavras Secretas
+
+//Para fazer um degrade na tela
+background: linear-gradient(180deg, rgba(9, 35, 175, 1) 0%, rgba(0, 0, 0, 1) 100%);
